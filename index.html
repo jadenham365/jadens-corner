@@ -9,11 +9,13 @@
         cursor: url(smeargle.png), auto;
         height: 100%;
         width: 100%;
+        margin: 0;
+        padding: 0;
       }
 
       #floor {
         position: absolute;
-        top: 50%;
+        top: 70%;
         left: 50%;
         width: max(40vw, 40vh);
         height: max(40vw, 40vh);
@@ -27,9 +29,21 @@
           height: min(40vw, 40vh);
         }
       }
+
+      #left-wall {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        width: max(40vw, 40vh);
+        height: max(40vw, 40vh);
+        background-color: sienna;
+        
+        
     </style>
   </head>
   <body>
     <div id="floor"></div>
+    <div id="left-wall"></div>
+    <div id="right-wall"></div>
   </body>
 </html>
