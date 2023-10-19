@@ -10,26 +10,21 @@
         cursor: url(smeargle.png), auto;
         height: 100vh;
       }
-      h1 {
-        color: white;
-        font-size: 50px;
-      }
-      #floor {
-        width: 50vh;
-        height: 50vh;
-        background-color: wheat;
-        margin: auto;
-        transform: rotate(-45deg) skew(30deg, 30deg);
-      }
-      #left-wall {
-        width: 50
-      }
+ #floor {
+  width: min(50vw, 50vh);
+  height: min(50vw, 50vh);
+  background-color: wheat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg) skew(30deg, 30deg);
+}
+
+
       
     </style>
   </head>
   <body>
-    <h1 class="title">Jaden's Corner of the Web</h1>
-    <h1>by me</h1>
     <div id="floor"></div>
     <div id="left-wall"></div>
     <div id="right-wall"></div>
