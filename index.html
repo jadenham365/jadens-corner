@@ -10,23 +10,28 @@
         cursor: url(smeargle.png), auto;
         height: 100vh;
       }
- #floor {
-  width: min(50vw, 50vh);
-  height: min(50vw, 50vh);
-  background-color: wheat;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg) skew(30deg, 30deg);
-}
 
+      #container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      	border: 1px solid red;
+      }
 
-      
+      #floor {
+        width: min(50vw, 50vh);
+        height: min(50vw, 50vh);
+        background-color: wheat;
+        margin-left: 300px;
+        margin-right: 300px;
+        transform: rotate(-45deg) skew(30deg, 30deg);
+      }
     </style>
   </head>
   <body>
-    <div id="floor"></div>
-    <div id="left-wall"></div>
-    <div id="right-wall"></div>
+    <div id="container">
+      <div id="floor"></div>
+    </div>
   </body>
 </html>
