@@ -7,15 +7,25 @@
       body {
         background-color: #b3d390;
         cursor: url(smeargle.png), auto;
+        height: 100%;
+        width: 100%;
       }
+
       #floor {
         position: absolute;
         top: 50%;
         left: 50%;
-        width: min(50vw, 50vh);
-        height: min(50vw, 50vh);
+        width: max(40vw, 40vh);
+        height: max(40vw, 40vh);
         background-color: wheat;
         transform: translate(-50%, -50%) rotate(-45deg) skew(30deg, 30deg);
+      }
+
+      @media (orientation: portrait) {
+        #floor {
+          width: min(40vw, 40vh);
+          height: min(40vw, 40vh);
+        }
       }
     </style>
   </head>
