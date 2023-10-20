@@ -28,16 +28,22 @@
           width: min(40vw, 40vh);
           height: min(40vw, 40vh);
         }
+        #left-wall {
+          width: min(40vw, 40vh);
+          height: min(40vw, 40vh);
+        }
       }
 
       #left-wall {
         position: absolute;
+        background-color: sienna;
+        clip-path: polygon(50% 35%, 100% 50%, 50% 65%, 0 50%);
         top: 70%;
         left: 50%;
         width: max(40vw, 40vh);
         height: max(40vw, 40vh);
-        background-color: sienna;
-        
+        transform: translate(-50%, -50%)
+      }
         
     </style>
   </head>
