@@ -13,43 +13,40 @@
         padding: 0;
       }
 
-      #floor {
+      #room {
         position: absolute;
-        top: 70%;
+        top: 50%;
         left: 50%;
-        width: max(40vw, 40vh);
-        height: max(40vw, 40vh);
+        width: 90vh;
+        height: 90vh;
+        transform: translate(-50%, -50%);
+        border: 10px solid red;
+        perspective: 600px;
+      }
+
+      #floor {
+        position: relative;
         background-color: wheat;
-        transform: translate(-50%, -50%) rotate(-45deg) skew(30deg, 30deg);
+        width: 50%;
+        height: 50%;
+
       }
 
       @media (orientation: portrait) {
-        #floor {
-          width: min(40vw, 40vh);
-          height: min(40vw, 40vh);
+        #room {
+          width: 90vw;
+          height: 90vw;
         }
-        #left-wall {
-          width: min(40vw, 40vh);
-          height: min(40vw, 40vh);
-        }
-      }
 
-      #left-wall {
-        position: absolute;
-        background-color: sienna;
-        clip-path: polygon(50% 35%, 100% 50%, 50% 65%, 0 50%);
-        top: 70%;
-        left: 50%;
-        width: max(40vw, 40vh);
-        height: max(40vw, 40vh);
-        transform: translate(-50%, -50%)
       }
-        
     </style>
   </head>
   <body>
-    <div id="floor"></div>
-    <div id="left-wall"></div>
-    <div id="right-wall"></div>
+    <div id="room">
+      <div id="floor"></div>
+      <div id="left-wall"></div>
+      <div id="right-wall"></div>
+    </div>
+
   </body>
 </html>
