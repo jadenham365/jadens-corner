@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Jaden's Corner of the Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&display=swap" rel="stylesheet">
     <style>
       body {
         background-color: #b3d390;
@@ -11,6 +14,15 @@
         width: 100%;
         margin: 0;
         padding: 0;
+        text-align: center;
+      }
+
+      h1 {
+        color: white;
+        position: relative;
+        top: 8%;
+        font-family: "Pixelify Sans", sans-serif;
+        font-size: 5vh
       }
 
       #room {
@@ -31,8 +43,6 @@
 
       }
 
-
-
       #left-wall {
         position: absolute;
         background-color: sienna;
@@ -51,6 +61,15 @@
 
       }
 
+      #me {
+        position: absolute;
+        z-index: 1;
+        height: 12%;
+        top: 58%;
+        left: 44%;
+
+      }
+
       @media (orientation: portrait) {
         #room {
           width: 90vw;
@@ -62,10 +81,14 @@
   </head>
   <body>
     <div id="room">
+      <img src="me.png" alt="pixel art character of the webpage's author" id="me">
       <div id="floor"></div>
       <div id="left-wall"></div>
       <div id="right-wall"></div>
     </div>
+
+    <h1>Jaden's Corner of the Web</h1>
+    
 
   </body>
 </html>
