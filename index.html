@@ -14,7 +14,7 @@
         width: 100%;
         margin: 0;
         padding: 0;
-        text-align: center;
+        
       }
 
       h1 {
@@ -22,7 +22,8 @@
         position: relative;
         top: 8%;
         font-family: "Pixelify Sans", sans-serif;
-        font-size: 5vh
+        font-size: 5vh;
+        text-align: center;
       }
 
       #room {
@@ -77,6 +78,20 @@
         }
 
       }
+      
+      #me-text-box {
+        position: absolute;
+        z-index: 1;
+        height: 25vh;
+        width: 100%;
+        background-color: #0000004f;
+        top: 70%;
+        font-family: "Pixelify Sans", sans-serif;
+        color: white;
+        font-size: 3vh;
+        padding-left: 5%;
+        
+      }
     </style>
   </head>
   <body>
@@ -88,7 +103,7 @@
     </div>
 
     <h1>Jaden's Corner of the Web</h1>
-    
+    <p id="me-text-box">Jaden:<br>"Howdy!<br>Welcome to my corner of the internet!<br>It's a little empty right now<br>(it's not even interactive yet!!)<br>but come back later to check for updates."</p>
 
   </body>
 </html>
